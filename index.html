@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Panorámica dentro de cilindro (final)</title>
+        <meta name="description" content="Escena 360° cilíndrica con techo y suelo blancos sólidos">
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene background="color: #FFFFFF">
+            <a-cylinder src="clase.jpg" radius="10" height="10" open-ended="true" material="side: back"></a-cylinder>
+            <a-circle position="0 -5.01 0" rotation="-90 0 0" radius="10.05" color="#ffffff" side="double"></a-circle>
+            <a-circle position="0 5.01 0" rotation="90 0 0" radius="10.05" color="#ffffff" side="double"></a-circle>
+            <a-entity position="0 0 0"><a-camera wasd-controls-enabled="true" look-controls="true"></a-camera></a-entity>
+            <a-entity light="type: ambient; intensity: 1.0; color: #ffffff"></a-entity>
+        </a-scene>
+    </body>
+</html>
